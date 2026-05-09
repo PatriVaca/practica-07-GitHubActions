@@ -30,10 +30,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Display location with PowerShell
+      - name: PowerShell
         run: Get-Location
+             Get-ChildItem
         shell: pwsh
 
-      - name: Display location with Bash
+      - name: Bash
         run: pwd
         shell: bash        
