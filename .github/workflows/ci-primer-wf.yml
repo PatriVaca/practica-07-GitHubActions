@@ -31,7 +31,8 @@ jobs:
 
     steps:
       - name: PowerShell
-        run: Get-Location
+        run: |
+             Get-Location
              Get-ChildItem
         shell: pwsh
 
